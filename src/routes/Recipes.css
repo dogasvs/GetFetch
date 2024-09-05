@@ -1,32 +1,37 @@
 .recipesContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 30px;
+  gap: 30px;
   padding-inline: 40px;
 }
 
 .recipesItem {
   img {
-    width: 400px;
+    width: 100%;
     border-radius: 10px;
+    transition: opacity 0.5s ease;
   }
 }
 
 .recipesItem {
-  width: 400px;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .recipesItem img.hidden {
-  display: none; 
+  opacity: 0;
+}
+
+.recipesItem:hover .recipeDetails {
+  opacity: 1; 
 }
 
 .recipeDetails {
   position: absolute;
   top: 0;
   left: 0;
-  width: 400px;
+  width: 100%;
   height: 100%;
   padding: 12px;
   background-color: rgba(0, 0, 0, 0.7); 
@@ -34,6 +39,7 @@
   border-radius: 10px;
   text-align: center;
   padding-top: 40px;
+  transition: opacity 0.5s ease;
 
   h1 {
     margin-bottom: 20px;
@@ -51,7 +57,7 @@
 .recipesDetailsContainer {
   display: flex;
   gap: 60px;
-  align-items: baseline;
+  align-items: flex-start;
   padding: 60px;
   background-color: aliceblue;
   border-radius: 20px;
