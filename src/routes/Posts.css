@@ -1,0 +1,81 @@
+.PostsContainer {
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+  gap: 15px;
+}
+
+.postItem {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.postItem h4 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.postItem p {
+  font-size: 16px;
+  color: #666;
+}
+
+.postItem button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.postItem button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
+.modal h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.modal ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.modal li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
